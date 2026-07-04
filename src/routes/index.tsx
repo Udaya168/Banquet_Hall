@@ -304,7 +304,7 @@ function Landing() {
 
       {/* Floating WhatsApp */}
       <motion.a
-        href="https://wa.me/919900000000"
+        href="https://wa.me/916361492452"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
@@ -920,7 +920,7 @@ function BookingAndMap() {
                   {errors.name && <ErrorText>Name is required</ErrorText>}
                 </Field>
                 <Field label="Phone">
-                  <input {...register("phone", { required: true, pattern: /^[0-9+\-\s()]{7,}$/ })} className="input" placeholder="+91 99000 00000" />
+                  <input {...register("phone", { required: true, pattern: /^[0-9+\-\s()]{7,}$/ })} className="input" placeholder="+91 6361492452" />
                   {errors.phone && <ErrorText>Valid phone required</ErrorText>}
                 </Field>
                 <Field label="Email" full>
@@ -986,9 +986,9 @@ function BookingAndMap() {
                 <div className="font-display text-2xl font-bold">Visit Us</div>
                 <div className="mt-1 h-px w-16 divider-gold" />
                 <ul className="mt-4 space-y-3 text-sm">
-                  <ContactLine icon={MapPin}>123 Royal Avenue, Downtown, Mumbai 400001</ContactLine>
-                  <ContactLine icon={Phone} href="tel:+919900000000">+91 99000 00000</ContactLine>
-                  <ContactLine icon={Mail} href="mailto:hello@royalgrand.com">hello@royalgrand.com</ContactLine>
+                  <ContactLine icon={MapPin}>Bangalore, Karnataka</ContactLine>
+                  <ContactLine icon={Phone} href="tel:+916361492452">+91 6361492452</ContactLine>
+                  <ContactLine icon={Mail} href="mailto:official@mavrostech.in">official@mavrostech.in</ContactLine>
                   <ContactLine icon={Clock}>Mon – Sun · 9:00 AM – 10:00 PM</ContactLine>
                 </ul>
               </div>
@@ -1091,9 +1091,9 @@ function FAQ() {
 
 function Contact() {
   const items = [
-    { icon: Phone, label: "Call", value: "+91 99000 00000", href: "tel:+919900000000" },
-    { icon: MessageCircle, label: "WhatsApp", value: "Chat with us", href: "https://wa.me/919900000000" },
-    { icon: Mail, label: "Email", value: "hello@royalgrand.com", href: "mailto:hello@royalgrand.com" },
+    { icon: Phone, label: "Call", value: "+91 6361492452", href: "tel:+916361492452" },
+    { icon: MessageCircle, label: "WhatsApp", value: "Chat with us", href: "https://wa.me/916361492452" },
+    { icon: Mail, label: "Email", value: "official@mavrostech.in", href: "mailto:official@mavrostech.in" },
     { icon: Instagram, label: "Instagram", value: "@royalgrand", href: "https://instagram.com" },
     { icon: Facebook, label: "Facebook", value: "Royal Grand Banquet", href: "https://facebook.com" },
     { icon: Youtube, label: "YouTube", value: "Watch tours", href: "https://youtube.com" },
