@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { motion, AnimatePresence, useScroll, useSpring, useInView } from "framer-motion";
 import {
-  Phone, Mail, MapPin, MessageCircle, Instagram, Facebook, Youtube,
+  Phone, Mail, MapPin, MessageCircle, Instagram, Facebook, Youtube, Linkedin,
   ChevronDown, ArrowUp, Menu, X, Sun, Moon, Star, Check,
   Sparkles, Crown, Users, Car, Snowflake, Utensils, Music, Camera,
   Zap, Clock, Wand2, HeartHandshake, PartyPopper, Baby, Cake, Briefcase,
@@ -1139,11 +1139,12 @@ function Footer() {
             A luxury banquet venue crafting extraordinary celebrations since 2014.
           </p>
           <div className="mt-5 flex gap-2">
-            {[Instagram, Facebook, Youtube].map((I, i) => (
-              <a key={i} href="#" className="grid h-9 w-9 place-items-center rounded-full border border-white/15 transition-colors hover:border-gold hover:text-gold">
-                <I className="h-4 w-4" />
-              </a>
-            ))}
+            <a href="https://www.instagram.com/mavros_ai?igsh=bm0wNmJ3MjJjbGEz&utm_source=qr" target="_blank" rel="noopener noreferrer" className="grid h-9 w-9 place-items-center rounded-full border border-white/15 transition-colors hover:border-gold hover:text-gold">
+              <Instagram className="h-4 w-4" />
+            </a>
+            <a href="https://www.linkedin.com/company/mavros-tech/" target="_blank" rel="noopener noreferrer" className="grid h-9 w-9 place-items-center rounded-full border border-white/15 transition-colors hover:border-gold hover:text-gold">
+              <Linkedin className="h-4 w-4" />
+            </a>
           </div>
         </div>
 
@@ -1164,7 +1165,11 @@ function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-6 text-xs text-white/50 sm:flex-row sm:px-6">
           <div>© {new Date().getFullYear()} Royal Grand Banquet. All rights reserved.</div>
-          <div>Crafted with care for unforgettable celebrations.</div>
+          <div className="text-right">
+            Crafted with care for unforgettable celebrations.
+            <br />
+            Designed under Mavros Tech Private Limited
+          </div>
         </div>
       </div>
     </footer>
