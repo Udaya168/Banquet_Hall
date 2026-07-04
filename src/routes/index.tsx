@@ -23,7 +23,7 @@ export const Route = createFileRoute("/")({
   component: Landing,
   head: () => ({
     links: [
-      { rel: "preload", as: "image", href: hero, fetchpriority: "high" } as any,
+      { rel: "preload", as: "image", href: hero, fetchPriority: "high" } as any,
       { rel: "canonical", href: "/" },
     ],
     meta: [{ property: "og:url", content: "/" }],
