@@ -234,7 +234,7 @@ function SectionTitle({ label, title, sub }: { label: string; title: React.React
 
 /* --------------------------- Page --------------------------- */
 
-function Landing() {
+export function Landing() {
   const { theme, toggle } = useTheme();
   const { scrollYProgress } = useScroll();
   const progress = useSpring(scrollYProgress, { stiffness: 100, damping: 30 });

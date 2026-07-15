@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: banquet-hall
+    env: static
+    buildCommand: npm install && npm run build:render
+    staticPublishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html

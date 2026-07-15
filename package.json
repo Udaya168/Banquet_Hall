@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
+    "build:render": "vite build",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
+    "preview:render": "vite preview --host 0.0.0.0 --port 4173",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
